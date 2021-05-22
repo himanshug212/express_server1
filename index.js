@@ -31,7 +31,7 @@ app.post('/api/todos', function (req, res) {
         ...req.body,
         id: getNextId()
     };
-    todos.push(todo)
+    todos.push(todo);
     res.json(todo);
 });
 
